@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone-Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <form onsubmit="return false"  id="form">
+        <h1>Club Form</h1>
+        <label for=""><b>First Name</b>:</label>
+        <input onblur="firstNameValidation()" type="text" id="firstInput"/> <br>
+        <p id="firstError"></p>
+        <br>
+        <label for=""><b>Surname</b>:</label>
+        <input onblur="surNameValidation()" type="text" id="surnameInput"> <br>
+        <p id="surNameError"></p>
+         <br>
+        <label for=""><b>Age</b>:</label>
+        <input onblur="ageValidation()" type="number" id="ageInput"> <br>
+        <p id="ageError"></p>
+        <br>
+        <label for=""><b>Current Level</b>:</label>
+        <input onblur="currentLevelValidation()" type="text" id="levelInput"> <br>
+        <p id="levelError"></p>
+        <br>
+        <label for=""><b>Favorite Club</b>:</label>
+        <input onblur="favoriteClubValidation()" type="text" id="clubInput">
+        <p id="clubError"></p>
+        <button onclick="clickMe()" class="btn">Submit</button>
+    </form>
+
+   <div class="table">
+    <table class="tab" border="1">
+       
+    </table>
+   </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
